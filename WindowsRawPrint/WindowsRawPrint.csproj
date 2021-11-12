@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Hamed Fathi</Authors>
+    <Company />
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <Version>1.0.0</Version>
+    <PackageProjectUrl>https://github.com/HamedFathi/WindowsRawPrint</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/HamedFathi/WindowsRawPrint</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+  </PropertyGroup>
+
+</Project>
