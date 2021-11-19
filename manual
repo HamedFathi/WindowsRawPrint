@@ -1,0 +1,26 @@
+// Allow the user to select a file.
+OpenFileDialog ofd = new OpenFileDialog();
+if( DialogResult.OK == ofd.ShowDialog(this) )
+{
+    // Allow the user to select a printer.
+    PrintDialog pd  = new PrintDialog();
+    pd.PrinterSettings = new PrinterSettings();
+    if( DialogResult.OK == pd.ShowDialog(this) )
+    {
+        // Print the file to the printer.
+        RawPrinterHelper.SendFileToPrinter(pd.PrinterSettings.PrinterName, ofd.FileName);
+    }
+}
+
+
+// Allow the user to send a string.
+string s = "Hello"; // device-dependent string, need a FormFeed?
+
+// Allow the user to select a printer.
+PrintDialog pd  = new PrintDialog();
+pd.PrinterSettings = new PrinterSettings();
+if( DialogResult.OK == pd.ShowDialog(this) )
+{
+    // Send a printer-specific to the printer.
+    RawPrinterHelper.SendStringToPrinter(pd.PrinterSettings.PrinterName, s);
+}
